@@ -9,11 +9,44 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background: #f8f9fa;
-      color: #333;
+      background: #121212;
+      color: #eee;
     }
+    nav {
+      background: #1f1f1f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #90caf9;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #eee;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #90caf9;
+    }
+
     header {
-      background: #007bff;
+      background: #1f1f1f;
       color: white;
       padding: 40px 0;
       text-align: center;
@@ -27,44 +60,72 @@
       padding: 0 20px;
     }
     h2 {
-      color: #007bff;
-      border-bottom: 2px solid #007bff;
+      color: #90caf9;
+      border-bottom: 2px solid #90caf9;
       padding-bottom: 5px;
     }
     .card {
-      background: white;
+      background: #1e1e1e;
       padding: 20px;
       margin: 20px 0;
       border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 5px rgba(255,255,255,0.1);
     }
     ul { padding-left: 20px; }
-    a { color: #007bff; text-decoration: none; }
+    a { color: #90caf9; text-decoration: none; }
     a:hover { text-decoration: underline; }
     footer {
       text-align: center;
       padding: 20px 0;
-      background: #ddd;
+      background: #1f1f1f;
       margin-top: 50px;
+      color: #eee;
+    }
+
+    /* Responsive navbar for small screens */
+    @media(max-width:600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Vaishnavi Shetty</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
   <header>
     <h1>Vaishnavi Shetty</h1>
-    <p>Software Developer | Web Developer | AI Enthusiast</p>
-    <p>Email: <a href="mailto:vaishnavishetty108@gmail.com" style="color:white;">vaishnavishetty108@gmail.com</a> | <a href="https://www.linkedin.com/in/vaishnavi-shetty-b75778267/" target="_blank" style="color:white;">LinkedIn</a> | Karnataka, India</p>
+    <p>Computer Science Student & Aspiring Software Developer</p>
   </header>
 
-  <section>
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
     <div class="card">
-      <p>As a dedicated Information Science student with a strong academic record and multiple accolades, I am passionate about software development and problem-solving. With a solid foundation in programming, algorithms, and data structures, I continuously explore emerging technologies to enhance my expertise. I thrive on applying theoretical knowledge to real-world challenges, leveraging creativity and innovation to develop effective solutions.</p>
+      <p>I am an Information Science student specializing in software development, AI, and full-stack web applications. I thrive on applying theoretical knowledge to real-world challenges, developing effective solutions with creativity and innovation.</p>
     </div>
   </section>
 
-  <section>
+  <!-- Education Section -->
+  <section id="education">
     <h2>Education</h2>
     <div class="card">
       <p><strong>Yenepoya Institute of Technology</strong>, Karnataka, India (Nov 2022 - May 2026)<br/>
@@ -75,7 +136,8 @@
     </div>
   </section>
 
-  <section>
+  <!-- Internship Experience Section -->
+  <section id="internship">
     <h2>Internship Experience</h2>
     <div class="card">
       <p><strong>CODSOFT</strong> | Java Programming Intern | Sept-Oct 2024</p>
@@ -93,7 +155,8 @@
     </div>
   </section>
 
-  <section>
+  <!-- Projects Section -->
+  <section id="projects">
     <h2>Projects</h2>
     <div class="card">
       <p><strong>Yatra Sevak AI – Travel Assistant Chatbot</strong></p>
@@ -119,7 +182,8 @@
     </div>
   </section>
 
-  <section>
+  <!-- Skills Section -->
+  <section id="skills">
     <h2>Skills</h2>
     <div class="card">
       <ul>
@@ -129,7 +193,8 @@
     </div>
   </section>
 
-  <section>
+  <!-- Certifications Section -->
+  <section id="certifications">
     <h2>Certifications</h2>
     <div class="card">
       <ul>
@@ -139,6 +204,16 @@
         <li>Python 3.4.3 Training – IIT Bombay</li>
         <li>Java Business Application Training – IIT Bombay</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:vaishnavishetty108@gmail.com">vaishnavishetty108@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishnavi-shetty-b75778267/" target="_blank">Vaishnavi Shetty</a></p>
+      <p>Location: Karnataka, India</p>
     </div>
   </section>
 
