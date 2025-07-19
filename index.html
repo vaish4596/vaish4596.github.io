@@ -9,11 +9,19 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background: #121212;
-      color: #eee;
+      background: linear-gradient(135deg, #3f51b5, #009688, #ff5722, #9c27b0);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
     }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     nav {
-      background: #1f1f1f;
+      background: rgba(0,0,0,0.7);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -25,7 +33,7 @@
     nav .logo {
       font-size: 20px;
       font-weight: bold;
-      color: #90caf9;
+      color: #ffeb3b;
     }
     nav ul {
       list-style: none;
@@ -37,17 +45,17 @@
       margin-left: 20px;
     }
     nav ul li a {
-      color: #eee;
+      color: #fff;
       text-decoration: none;
       transition: color 0.3s;
     }
     nav ul li a:hover {
-      color: #90caf9;
+      color: #ffeb3b;
     }
 
     header {
-      background: #1f1f1f;
-      color: white;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
       padding: 40px 0;
       text-align: center;
     }
@@ -58,31 +66,32 @@
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 8px;
     }
     h2 {
-      color: #90caf9;
-      border-bottom: 2px solid #90caf9;
+      color: #ffeb3b;
+      border-bottom: 2px solid #ffeb3b;
       padding-bottom: 5px;
     }
     .card {
-      background: #1e1e1e;
+      background: rgba(0,0,0,0.6);
       padding: 20px;
       margin: 20px 0;
       border-radius: 8px;
-      box-shadow: 0 0 5px rgba(255,255,255,0.1);
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
     ul { padding-left: 20px; }
-    a { color: #90caf9; text-decoration: none; }
+    a { color: #ffeb3b; text-decoration: none; }
     a:hover { text-decoration: underline; }
     footer {
       text-align: center;
       padding: 20px 0;
-      background: #1f1f1f;
+      background: rgba(0,0,0,0.7);
       margin-top: 50px;
-      color: #eee;
+      color: #fff;
     }
 
-    /* Responsive navbar for small screens */
     @media(max-width:600px) {
       nav ul {
         flex-direction: column;
@@ -113,7 +122,7 @@
   <!-- Hero Section -->
   <header>
     <h1>Vaishnavi Shetty</h1>
-    <p>Computer Science Student & Aspiring Software Developer</p>
+    <p>Information Science Student & Aspiring Software Developer</p>
   </header>
 
   <!-- About Section -->
@@ -129,10 +138,8 @@
     <h2>Education</h2>
     <div class="card">
       <p><strong>Yenepoya Institute of Technology</strong>, Karnataka, India (Nov 2022 - May 2026)<br/>
-      B.Tech. CSE Honors with Specialization in Information Science and Engineering<br/>
-      CGPA: 9.1/10</p>
-      <p><strong>Excellent PU College</strong>, Moodbidri, Karnataka (Class of 2022)<br/>
-      XII passed with 84.83%</p>
+      B.Tech. CSE Honors with Specialization in Information Science and Engineering</p>
+      <p><strong>Excellent PU College</strong>, Moodbidri, Karnataka (Class of 2022)</p>
     </div>
   </section>
 
@@ -203,23 +210,3 @@
         <li>Foundations of Cybersecurity – Coursera</li>
         <li>Python 3.4.3 Training – IIT Bombay</li>
         <li>Java Business Application Training – IIT Bombay</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:vaishnavishetty108@gmail.com">vaishnavishetty108@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishnavi-shetty-b75778267/" target="_blank">Vaishnavi Shetty</a></p>
-      <p>Location: Karnataka, India</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Vaishnavi Shetty. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
