@@ -14,6 +14,7 @@
       animation: gradientBG 15s ease infinite;
       color: #fff;
     }
+
     @keyframes gradientBG {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
@@ -21,84 +22,126 @@
     }
 
     nav {
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.8);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 1rem 2rem;
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
+
     nav .logo {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
       color: #ffeb3b;
     }
+
     nav ul {
       list-style: none;
       display: flex;
-      margin: 0;
+      gap: 1rem;
       padding: 0;
+      margin: 0;
     }
-    nav ul li {
-      margin-left: 20px;
-    }
+
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      font-weight: 500;
       transition: color 0.3s;
     }
+
     nav ul li a:hover {
       color: #ffeb3b;
     }
 
     header {
-      background: rgba(0,0,0,0.6);
-      color: #fff;
-      padding: 40px 0;
       text-align: center;
+      padding: 5rem 1rem 3rem;
+      background: rgba(0, 0, 0, 0.5);
     }
-    header h1 { margin: 0; font-size: 36px; }
-    header p { margin: 5px 0 0; }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ffeb3b;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
 
     section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: rgba(0,0,0,0.5);
-      border-radius: 8px;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
     }
+
     h2 {
+      font-size: 2rem;
       color: #ffeb3b;
-      border-bottom: 2px solid #ffeb3b;
-      padding-bottom: 5px;
+      border-bottom: 3px solid #ffeb3b;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
+
     .card {
       background: rgba(0,0,0,0.6);
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
     }
-    ul { padding-left: 20px; }
-    a { color: #ffeb3b; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
     footer {
       text-align: center;
-      padding: 20px 0;
-      background: rgba(0,0,0,0.7);
-      margin-top: 50px;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
       color: #fff;
     }
 
-    @media(max-width:600px) {
-      nav ul {
+    a {
+      color: #ffeb3b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    @media(max-width: 768px) {
+      nav {
         flex-direction: column;
         align-items: flex-start;
       }
-      nav ul li {
-        margin: 10px 0;
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
       }
     }
   </style>
@@ -133,15 +176,7 @@
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="card">
-      <p><strong>Yenepoya Institute of Technology</strong>, Karnataka, India (Nov 2022 - May 2026)<br/>
-      B.Tech. CSE Honors with Specialization in Information Science and Engineering</p>
-      <p><strong>Excellent PU College</strong>, Moodbidri, Karnataka (Class of 2022)</p>
-    </div>
-  </section>
+
 
   <!-- Internship Experience Section -->
   <section id="internship">
@@ -210,3 +245,23 @@
         <li>Foundations of Cybersecurity – Coursera</li>
         <li>Python 3.4.3 Training – IIT Bombay</li>
         <li>Java Business Application Training – IIT Bombay</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/vaish4596" target="_blank">github.com/vaish4596</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vaishnavi Shetty. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
