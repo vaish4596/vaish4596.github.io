@@ -2,267 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vaishnavi Shetty | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: linear-gradient(135deg, #3f51b5, #009688, #ff5722, #9c27b0);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      color: #fff;
-    }
-
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    nav {
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    }
-
-    nav .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ffeb3b;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ffeb3b;
-    }
-
-    header {
-      text-align: center;
-      padding: 5rem 1rem 3rem;
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      color: #ffeb3b;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-
-    section {
-      max-width: 960px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 12px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #ffeb3b;
-      border-bottom: 3px solid #ffeb3b;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .card {
-      background: rgba(0,0,0,0.6);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.7);
-      color: #fff;
-    }
-
-    a {
-      color: #ffeb3b;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    @media(max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      header h1 {
-        font-size: 2rem;
-      }
-
-      section {
-        margin: 2rem 1rem;
-        padding: 1.5rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishnavi Shetty Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">Vaishnavi Shetty</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#internship">Internship</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
   <header>
     <h1>Vaishnavi Shetty</h1>
-    <p>Information Science Student & Aspiring Software Developer</p>
+    <p>Full-Stack Developer | AI Enthusiast</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I am an Information Science student specializing in software development, AI, and full-stack web applications. I thrive on applying theoretical knowledge to real-world challenges, developing effective solutions with creativity and innovation.</p>
-    </div>
-  </section>
-
-
-
-  <!-- Internship Experience Section -->
-  <section id="internship">
-    <h2>Internship Experience</h2>
-    <div class="card">
-      <p><strong>CODSOFT</strong> | Java Programming Intern | Sept-Oct 2024</p>
-      <ul>
-        <li>Developed Number Guessing Game, ATM Interface, and Student Grade Calculator in Java.</li>
-      </ul>
-      <p><strong>ACADEMOR</strong> | Artificial Intelligence Intern | Sept-Oct 2023</p>
-      <ul>
-        <li>Worked on AI model development using TensorFlow and PyTorch for real-world applications.</li>
-      </ul>
-      <p><strong>MICRODEGREE</strong> | Python FullStack Development Intern | June-July 2024</p>
-      <ul>
-        <li>Developed full-stack web apps using Python frameworks (Flask, Django) with RESTful APIs and PostgreSQL/MySQL integration.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="card">
-      <p><strong>Yatra Sevak AI – Travel Assistant Chatbot</strong></p>
-      <ul>
-        <li>Developed using Hugging Face for booking, assistance, and task management.</li>
-      </ul>
-      <p><strong>Comprehensive Banking Web Application</strong></p>
-      <ul>
-        <li>Full-stack banking app with account management, fund transfers, and secure authentication using Django and PostgreSQL.</li>
-      </ul>
-      <p><strong>Mobile Shop Application</strong></p>
-      <ul>
-        <li>Python full-stack e-commerce app with payment gateway integration.</li>
-      </ul>
-      <p><strong>Early Prediction of Lifestyle Diseases</strong></p>
-      <ul>
-        <li>Hackathon project predicting diabetes and hypertension risks using ML models and Flask web app integration.</li>
-      </ul>
-      <p><strong>Deep Learning Based Multi-Modal Steganography</strong> (Current)</p>
-      <ul>
-        <li>Embedding secret data in images, videos, audio, and text using CNNs and GANs in TensorFlow/PyTorch.</li>
-      </ul>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/chatbot.png" alt="Chatbot" />
+        <h3>Yatra Sevak AI</h3>
+        <p>Travel assistant using Hugging Face for booking, task handling, and real-time updates.</p>
+      </div>
+      <div class="card">
+        <img src="images/banking.png" alt="Banking App" />
+        <h3>Banking Web App</h3>
+        <p>Online platform for managing bank accounts and transactions using Python full-stack.</p>
+      </div>
+      <div class="card">
+        <img src="images/mobile-shop.png" alt="Mobile Shop" />
+        <h3>Mobile Shop App</h3>
+        <p>E-commerce site built with Bootstrap and JavaScript showcasing dynamic product loading.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <div class="card">
-      <ul>
-        <li>Programming: DSA, Python, Java, SQL, HTML, CSS, JavaScript, C++</li>
-        <li>Tools: DevOps, Tableau, Power BI, Microsoft Excel, Data Visualization</li>
-      </ul>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/python.png" alt="Python" />
+        <h3>Python</h3>
+      </div>
+      <div class="card">
+        <img src="images/sql.png" alt="SQL" />
+        <h3>SQL</h3>
+      </div>
+      <div class="card">
+        <img src="images/html-css.png" alt="HTML/CSS" />
+        <h3>HTML & CSS</h3>
+      </div>
+      <div class="card">
+        <img src="images/js.png" alt="JavaScript" />
+        <h3>JavaScript</h3>
+      </div>
     </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="card">
-      <ul>
-        <li>Artificial Intelligence by Academor</li>
-        <li>Java Training – IIT Bombay</li>
-        <li>Foundations of Cybersecurity – Coursera</li>
-        <li>Python 3.4.3 Training – IIT Bombay</li>
-        <li>Java Business Application Training – IIT Bombay</li>
-      </ul>
+  <section id="internships">
+    <h2>Internships</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/ai-intern.png" alt="AI Internship" />
+        <h3>Academor AI Intern</h3>
+        <p>Worked on Yatra Sevak AI project, developed travel assistant with external API and Hugging Face integration.</p>
+      </div>
+      <div class="card">
+        <img src="images/bi-intern.png" alt="BI Internship" />
+        <h3>BI Intern</h3>
+        <p>Learned Power BI, SQL, and Excel to analyze business data trends and create interactive dashboards.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: your.email@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/vaish4596" target="_blank">github.com/vaish4596</a></p>
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="slider">
+      <div><img src="certificates/cert1.png" alt="Certificate 1" /></div>
+      <div><img src="certificates/cert2.png" alt="Certificate 2" /></div>
+      <div><img src="certificates/cert3.png" alt="Certificate 3" /></div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Vaishnavi Shetty. All rights reserved.</p>
+    <p>&copy; 2025 Vaishnavi Shetty | <a href="https://github.com/vaish4596" target="_blank">GitHub</a></p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+  </script>
 </body>
 </html>
