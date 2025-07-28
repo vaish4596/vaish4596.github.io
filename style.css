@@ -1,3 +1,18 @@
+/* --- Gradient Background Animation (same as your original) --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #1b2735, #090a0f, #4b6cb7, #182848);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* --- Navbar --- */
 nav {
   position: fixed;
@@ -27,7 +42,7 @@ header.hero {
 }
 .hero p.subtitle {
   font-size: 1.25rem;
-  color: #555;
+  color: #ddd;
 }
 .hero .btn {
   display: inline-block;
@@ -44,7 +59,7 @@ header.hero {
 /* --- Section Styling --- */
 section {
   padding: 4rem 1rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 section h2 {
@@ -52,24 +67,53 @@ section h2 {
   margin-bottom: 1rem;
   border-bottom: 3px solid #007BFF;
   display: inline-block;
+  color: #fff;
 }
 
-/* --- Projects Grid --- */
-.projects-grid {
+/* --- Card Grids --- */
+.projects-grid,
+.skills-grid,
+.internships-grid,
+.certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
-.project-card {
-  background: white;
+
+/* --- Cards --- */
+.card {
+  background: #fff;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #333;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.project-card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
-.project-card h3 { margin-top: 0; }
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0;
+}
+.card img {
+  max-width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* --- Footer --- */
+footer {
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
