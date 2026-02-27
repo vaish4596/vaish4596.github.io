@@ -7,6 +7,7 @@ body {
   animation: gradientBG 15s ease infinite;
   color: white;
 }
+
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -22,16 +23,24 @@ nav {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 100;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0; padding: 1rem;
+  margin: 0;
+  padding: 1rem;
 }
+
 nav li { margin: 0 1rem; }
-nav a { text-decoration: none; color: #333; font-weight: 500; }
 
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
+/* --- Profile Picture --- */
 .profile-pic-wrapper {
   width: 180px;
   height: 180px;
@@ -47,31 +56,37 @@ nav a { text-decoration: none; color: #333; font-weight: 500; }
   object-fit: cover;
 }
 
-
 /* --- Hero Section --- */
 header.hero {
   padding: 8rem 1rem 4rem;
   text-align: center;
 }
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
+
 .hero p.subtitle {
   font-size: 1.25rem;
   color: #ddd;
 }
+
 .hero .btn {
   display: inline-block;
   margin: 1rem 0.5rem;
   padding: 0.75rem 1.5rem;
   background: #007BFF;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
-.hero .btn:hover { background: #0056b3; }
+
+.hero .btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
 
 /* --- Section Styling --- */
 section {
@@ -79,6 +94,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -98,31 +114,58 @@ section h2 {
   margin-top: 2rem;
 }
 
-/* --- Cards --- */
+/* --- Cards (Improved with glass effect) --- */
 .card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   color: #333;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* --- Modern Hover Effect --- */
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,123,255,0.35);
 }
+
+/* --- Card Text --- */
 .card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
+
 .card p {
   font-size: 0.95rem;
   margin: 0.5rem 0 0;
 }
+
 .card img {
   max-width: 60px;
   margin-bottom: 1rem;
+}
+
+/* --- GitHub / Project Button Styling --- */
+.card .btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.card .btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,123,255,0.4);
 }
 
 /* --- Footer --- */
